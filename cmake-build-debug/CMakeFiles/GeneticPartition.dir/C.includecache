@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.c
+stdio.h
+-
+stdbool.h
+-
+stdlib.h
+-
+Assignment_1.h
+C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.h
+
+C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.h
+stdbool.h
+-
+
