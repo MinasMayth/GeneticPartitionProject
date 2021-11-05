@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GeneticPartition.dir/Assignment_1.c.obj"
   "CMakeFiles/GeneticPartition.dir/Assignment_2.c.obj"
+  "CMakeFiles/GeneticPartition.dir/Assignment_3.c.obj"
+  "CMakeFiles/GeneticPartition.dir/Assignment_4.c.obj"
+  "CMakeFiles/GeneticPartition.dir/Assignment_5.c.obj"
   "CMakeFiles/GeneticPartition.dir/main.c.obj"
   "GeneticPartition.exe"
   "GeneticPartition.exe.manifest"
