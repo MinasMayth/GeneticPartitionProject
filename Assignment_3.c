@@ -29,7 +29,7 @@ void mutateChromo(set_t set, chromo_t *chromo) {
          chromo1->genes[i] = chromo2->genes[i];
          chromo2->genes[i] = tempChrom.genes[i];
  }
-     // I believe temp is temporary storage
+     // temp is temporary storage
 
      // Check for fitness
      chromo1->fitness = fitnessMeasuring(set, *chromo1);

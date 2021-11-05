@@ -176,6 +176,78 @@ Assignment_2.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/Assignment_2.c.s
 .PHONY : Assignment_2.c.s
 
+Assignment_3.obj: Assignment_3.c.obj
+.PHONY : Assignment_3.obj
+
+# target to build an object file
+Assignment_3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/Assignment_3.c.obj
+.PHONY : Assignment_3.c.obj
+
+Assignment_3.i: Assignment_3.c.i
+.PHONY : Assignment_3.i
+
+# target to preprocess a source file
+Assignment_3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/Assignment_3.c.i
+.PHONY : Assignment_3.c.i
+
+Assignment_3.s: Assignment_3.c.s
+.PHONY : Assignment_3.s
+
+# target to generate assembly for a file
+Assignment_3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/Assignment_3.c.s
+.PHONY : Assignment_3.c.s
+
+Assignment_4.obj: Assignment_4.c.obj
+.PHONY : Assignment_4.obj
+
+# target to build an object file
+Assignment_4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/Assignment_4.c.obj
+.PHONY : Assignment_4.c.obj
+
+Assignment_4.i: Assignment_4.c.i
+.PHONY : Assignment_4.i
+
+# target to preprocess a source file
+Assignment_4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/Assignment_4.c.i
+.PHONY : Assignment_4.c.i
+
+Assignment_4.s: Assignment_4.c.s
+.PHONY : Assignment_4.s
+
+# target to generate assembly for a file
+Assignment_4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/Assignment_4.c.s
+.PHONY : Assignment_4.c.s
+
+Assignment_5.obj: Assignment_5.c.obj
+.PHONY : Assignment_5.obj
+
+# target to build an object file
+Assignment_5.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/Assignment_5.c.obj
+.PHONY : Assignment_5.c.obj
+
+Assignment_5.i: Assignment_5.c.i
+.PHONY : Assignment_5.i
+
+# target to preprocess a source file
+Assignment_5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/Assignment_5.c.i
+.PHONY : Assignment_5.c.i
+
+Assignment_5.s: Assignment_5.c.s
+.PHONY : Assignment_5.s
+
+# target to generate assembly for a file
+Assignment_5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/Assignment_5.c.s
+.PHONY : Assignment_5.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -215,6 +287,15 @@ help:
 	@echo ... Assignment_2.obj
 	@echo ... Assignment_2.i
 	@echo ... Assignment_2.s
+	@echo ... Assignment_3.obj
+	@echo ... Assignment_3.i
+	@echo ... Assignment_3.s
+	@echo ... Assignment_4.obj
+	@echo ... Assignment_4.i
+	@echo ... Assignment_4.s
+	@echo ... Assignment_5.obj
+	@echo ... Assignment_5.i
+	@echo ... Assignment_5.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

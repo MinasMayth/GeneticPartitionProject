@@ -6,17 +6,25 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.c
-stdio.h
--
+C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.h
 stdbool.h
 -
-stdlib.h
--
+
+C:/Users/samya/CLionProjects/GeneticPartition/Assignment_2.h
 Assignment_1.h
 C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.h
 
-C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.h
+C:/Users/samya/CLionProjects/GeneticPartition/main.c
 stdbool.h
 -
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+Assignment_1.h
+C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.h
+Assignment_2.h
+C:/Users/samya/CLionProjects/GeneticPartition/Assignment_2.h
 

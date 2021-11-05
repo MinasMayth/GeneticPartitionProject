@@ -13,7 +13,12 @@ void readInitialDataset(set_t set, bool automatic){
             set[i] = rand() % AUTO_MAX;
         }
 
-        printf("We reached here!");
+        printf("Initial set generated: \n");
+        for(int i = 0; i < popSize; i++) {
+            printf("%d ", set[i]);
+            printf("\n");
+        }
+
     }else{
         int spaceLeft = INT_MAX;
         for(int i=0; i < numBlocks; i++) {
