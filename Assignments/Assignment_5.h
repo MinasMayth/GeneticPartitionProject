@@ -5,6 +5,6 @@
 #ifndef GENETICPARTITION_ASSIGNMENT_5_H
 #define GENETICPARTITION_ASSIGNMENT_5_H
 
-int towerHeightDifference(set_t set, chromo_t chromo);
+int towerHeightDifference(set_type set, chromo_type chromo);
 
 #endif //GENETICPARTITION_ASSIGNMENT_5_H

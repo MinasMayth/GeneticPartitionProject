@@ -11,7 +11,7 @@
 
 #define numBlocks 20
 // number of blocks in the input set
-#define chromLength numBlocks
+#define chromoLength numBlocks
 //length of chromosome
 #define popSize 10
 //number of chromosomes in population
@@ -20,45 +20,41 @@ int blocks[numBlocks];
 #define AUTO_MAX (INT_MAX / 20)
 
 //Defining the types
-typedef int set_t[numBlocks];
+typedef int set_type[numBlocks];
 
-typedef bool gene_t;
+typedef bool gene_type;
 
 typedef struct {
-    gene_t genes[chromLength];
+    gene_type genes[chromoLength];
     int fitness;
-} chromo_t;
+} chromo_type;
 
 //Functions used sorted by assignment question :
 //Functions used in the first question
-void readInitialDataset(set_t set, bool automatic);
+void readInitialDataset(set_type set, bool automatic);
 
 //Functions used in the second question
-void generateRandomChromosomes(set_t set,chromo_t *chromo);
+void generateRandomChromosomes(set_type set, chromo_type *chromo);
 
 //Functions used in the third question
 //Mutation function
-void mutateChromo(set_t, chromo_t *chromo);
+void mutateChromo(set_type, chromo_type *chromo);
 
 //Fitness Measurement function --> Still needs to be written !! Example at line 311 Page 21
-int fitnessMeasuring(set_t set, chromo_t chromo);
+int fitnessMeasuring(set_type set, chromo_type chromo);
 
 //Cross Over function
-void chromosomeCrossOver(set_t, chromo_t *chromo1, chromo_t *chromo2);
+void chromosomeCrossOver(set_type, chromo_type *chromo1, chromo_type *chromo2);
 
 //Random Function --> Still needs to be written !!! Example is in the assigment paper
 int randomInt(int lower,int upper);
 
 //Functions used in the fourth question
 //Function to calculate the size of the towers
-int heightOfTower(set_t set, bool selectedSet,chromo_t chromo);
+int heightOfTower(set_type set, bool selectedSet, chromo_type chromo);
 
 
 
-bool generation[popSize][chromLength];
-
-
-
-
+bool generation[popSize][chromoLength];
 
 #endif //GENETICPARTITION_ASSIGNMENT_1_H

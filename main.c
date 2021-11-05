@@ -18,28 +18,8 @@
 
 #include "GeneticPartitionCore.h"
 
-#define numBlocks 20
-// number of blocks in the input set
-#define chromLength numBlocks
-//length of chromosome
-#define popSize 10
-// Maximum value when automatically generating
-#define AUTO_MAX (INT_MAX / 20)
-typedef int set_t[numBlocks];
-
-//number of chromosomes in population
-set_t blocks;
-
-bool generation[popSize][chromLength];
-
 
 int main(){
-    readInitialDataset(blocks, true);
-
-
-    for(int i=0; i < chromLength; i++) {
-        generateRandomChromosomes(blocks, (chromo_t *) &generation[i]);
-    }
 
     return 0;
 }

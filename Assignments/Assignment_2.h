@@ -7,16 +7,16 @@
 
 #include "Assignment_1.h"
 
-//typedef int set_t[numBlocks];
-//typedef bool gene_t;
+//typedef int set_type[numBlocks];
+//typedef bool gene_type;
 
 //typedef struct {
-    //gene_t genes[chromLength];
+    //gene_type genes[chromoLength];
     //int fitness;
-//} chromo_t;
+//} chromo_type;
 
 
 
-//void generateRandomChromosomes(set_t set,chromo_t *chromo);
+//void generateRandomChromosomes(set_type set,chromo_type *chromo);
 
 #endif //GENETICPARTITION_ASSIGNMENT_2_H

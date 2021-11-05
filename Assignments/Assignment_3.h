@@ -9,13 +9,13 @@
 #include "Assignment_2.h"
 
 //Mutation function
-//void mutateChromo(set_t, chromo_t *chromo);
+//void mutateChromosome(set_type, chromo_type *chromo);
 
 //Fitness Measurement function --> Still needs to be written !! Example at line 311 Page 21
-//int fitnessMeasuring(set_t set, chromo_t chromo);
+//int fitnessMeasuring(set_type set, chromo_type chromo);
 
 //Cross Over function
-//void chromosomeCrossOver(set_t, chromo_t *chromo1, chromo_t *chromo2);
+//void chromosomeCrossOver(set_type, chromo_type *chromo1, chromo_type *chromo2);
 
 //Random Function --> Still needs to be written !!!
 //int randomInt(int lower,int upper);

@@ -10,6 +10,6 @@
 #include "Assignment_3.h"
 
 //Function to calculate the size of the towers
-int heightOfTower(set_t set, bool selectedSet,chromo_t chromo);
+int heightOfTower(set_type set, bool selectedSet, chromo_type chromo);
 
 #endif //GENETICPARTITION_ASSIGNMENT_4_H

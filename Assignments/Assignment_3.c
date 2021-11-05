@@ -8,23 +8,23 @@
 
 // Assignment 3 a: Mutate a single gene in a chromosome.
 
-void mutateChromo(set_t set, chromo_t *chromo) {
-    int mutatedGene = randomInt(0, chromLength);
+void mutateChromosome(set_type set, chromo_type *chromo) {
+    int mutatedGene = randomInt(0, chromoLength);
 
     chromo->genes[mutatedGene] = (chromo->genes[mutatedGene] + 1) % 2;
     chromo->fitness = fitnessMeasuring(set, *chromo);
 }
  // Assignment 3 b : Perform a cross-over mutation between two chromosomes
 
- void chromosomeCrossOver(set_t set, chromo_t *chromo1, chromo_t *chromo2) {
+ void chromosomeCrossOver(set_type set, chromo_type *chromo1, chromo_type *chromo2) {
 
      // Use the given random method to determine the location where the chromosomes should be "cut"
 
-     int crossOverGene = randomInt(0, chromLength);
+     int crossOverGene = randomInt(0, chromoLength);
 
-     chromo_t tempChrom;
+     chromo_type tempChrom;
 
-     for (int i = crossOverGene; i < chromLength; ++i) {
+     for (int i = crossOverGene; i < chromoLength; ++i) {
          tempChrom.genes[i] = chromo1->genes[i];
          chromo1->genes[i] = chromo2->genes[i];
          chromo2->genes[i] = tempChrom.genes[i];

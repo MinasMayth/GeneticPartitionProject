@@ -5,6 +5,6 @@
 #include "Assignment_5.h"
 #include <stdlib.h>
 
-int towerHeightDifference(set_t set, chromo_t chromo){
+int towerHeightDifference(set_type set, chromo_type chromo){
     return abs((heightOfTower(set, true, chromo) - heightOfTower(set, false, chromo)));
 }
