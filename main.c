@@ -1,3 +1,8 @@
+/* file        : main.c
+ * authors     : Samy Hashim (s.t.a.hashim@student.rug.nl)
+ *             : Alexander Vogt (a.n.vogt@student.rug.nl)
+ * date        : Due 05/11/2021
+*/
 
 /* Description:
 * Given two sets of positive integers, we create a pair of disjoint sets.
@@ -11,15 +16,7 @@
 * solution it comes to.
 */
 
-#include <stdbool.h>
-#include <stdio.h>
-#include<stdlib.h>
-#include <stdbool.h>
-#include "Assignments/Assignment_1.h"
-#include "Assignments/Assignment_2.h"
-#include "Assignments/Assignment_3.h"
-#include "Assignments/Assignment_4.h"
-#include "Assignments/Assignment_5.h"
+#include "GeneticPartitionCore.h"
 
 #define numBlocks 20
 // number of blocks in the input set
