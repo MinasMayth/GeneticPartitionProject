@@ -15,11 +15,11 @@
 #include <stdio.h>
 #include<stdlib.h>
 #include <stdbool.h>
-#include "Assignment_1.h"
-#include "Assignment_2.h"
-#include "Assignment_3.h"
-#include "Assignment_4.h"
-#include "Assignment_5.h"
+#include "Assignments/Assignment_1.h"
+#include "Assignments/Assignment_2.h"
+#include "Assignments/Assignment_3.h"
+#include "Assignments/Assignment_4.h"
+#include "Assignments/Assignment_5.h"
 
 #define numBlocks 20
 // number of blocks in the input set
@@ -43,5 +43,7 @@ int main(){
     for(int i=0; i < chromLength; i++) {
         generateRandomChromosomes(blocks, (chromo_t *) &generation[i]);
     }
+
     return 0;
 }
+

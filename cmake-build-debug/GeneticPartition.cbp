@@ -74,34 +74,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.c">
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_1.c">
 			<Option target="GeneticPartition"/>
 		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.h">
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_1.h">
 			<Option target="GeneticPartition"/>
 		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignment_2.c">
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_2.c">
 			<Option target="GeneticPartition"/>
 		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignment_2.h">
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_2.h">
 			<Option target="GeneticPartition"/>
 		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignment_3.c">
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_3.c">
 			<Option target="GeneticPartition"/>
 		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignment_3.h">
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_3.h">
 			<Option target="GeneticPartition"/>
 		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignment_4.c">
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_4.c">
 			<Option target="GeneticPartition"/>
 		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignment_4.h">
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_4.h">
 			<Option target="GeneticPartition"/>
 		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignment_5.c">
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_5.c">
 			<Option target="GeneticPartition"/>
 		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignment_5.h">
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_5.h">
+			<Option target="GeneticPartition"/>
+		</Unit>
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionCore.c">
+			<Option target="GeneticPartition"/>
+		</Unit>
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionCore.h">
 			<Option target="GeneticPartition"/>
 		</Unit>
 		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/main.c">

@@ -8,11 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/samya/CLionProjects/GeneticPartition/Assignment_1.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Assignment_1.c.obj"
-  "C:/Users/samya/CLionProjects/GeneticPartition/Assignment_2.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Assignment_2.c.obj"
-  "C:/Users/samya/CLionProjects/GeneticPartition/Assignment_3.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Assignment_3.c.obj"
-  "C:/Users/samya/CLionProjects/GeneticPartition/Assignment_4.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Assignment_4.c.obj"
-  "C:/Users/samya/CLionProjects/GeneticPartition/Assignment_5.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Assignment_5.c.obj"
+  "C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_1.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Assignments/Assignment_1.c.obj"
+  "C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_2.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Assignments/Assignment_2.c.obj"
+  "C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_3.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Assignments/Assignment_3.c.obj"
+  "C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_4.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.obj"
+  "C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_5.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.obj"
+  "C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionCore.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj"
   "C:/Users/samya/CLionProjects/GeneticPartition/main.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
