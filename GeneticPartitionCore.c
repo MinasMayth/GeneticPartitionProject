@@ -6,17 +6,18 @@
 #include "GeneticPartitionCore.h"
 #include "stdbool.h"
 #include "GeneticPartitionConfigurationSimulation.h"
+#include "Testing.h"
+#include "GeneticPartitionVisualization.h"
 
 /*
  * Methods used for the partition problem
  */
 
-void readInitialDataset(set_type set, bool automatic){
+void generateInitialTowerSet(set_type set, bool automatic){
     if(automatic){
         for(int i=0; i < POPULATION_SIZE; i++){
             set[i] = rand() % AUTO_MAX;
         }
-
         printf("Initial set generated: \n");
         for(int i = 0; i < POPULATION_SIZE; i++) {
             printf("%d ", set[i]);
@@ -45,11 +46,10 @@ void readInitialDataset(set_type set, bool automatic){
 
 // Function that creates the initial generation
 void createNewGeneration(set_type set, chromo_type *generation){
-    int i = 0;
-    for (i;i< POPULATION_SIZE,i++){
-        generateRandomChromosomes(set, *generation[i]);
+    int x = 0;
+    for (x; x < POPULATION_SIZE; x++){
+        generateRandomChromosomes(set, &generation[x]);
     }
-return;
 }
 
 // Function that sorts the chromosomes in an array with the fittest at index 0
@@ -59,7 +59,7 @@ void sortChromosomes(chromo_type *generation){
         int minimum = i;
 
         for (int j = 0; j<POPULATION_SIZE;j++){
-            if (generation[j].fitness < generation[min].fitness) {
+            if (generation[j].fitness < generation[minimum].fitness) {
                 minimum = j;
             }
         }
@@ -67,9 +67,9 @@ void sortChromosomes(chromo_type *generation){
     }
 }
 
-//Permute two chromosomes in the generation
 
-void permute(int i, int j, chromo_type *generation){
+
+void permute(int i, int j, chromo_type *generation) {
     chromo_type temporaryChromosome;
 
     copyChromosome(&temporaryChromosome,generation[i]);
@@ -79,11 +79,12 @@ void permute(int i, int j, chromo_type *generation){
 
 // Copy Chromosomes function
 
-void copyChromosome (chromo_type *destination, chromo_type * source){
-    for (int i = 0,i < LENGTH_OF_CHROMOSOME,i++) {
-        destination->genes[i] = source.genes[i];
+void copyChromosome (chromo_type *to_overwrite, chromo_type to_copy){
+    for (int x = 0; x < LENGTH_OF_CHROMOSOME; x++) {
+        to_overwrite -> genes[x] = to_copy.genes[x];
     }
-    destination -> fitness = source->fitness;
+    to_overwrite -> fitness = to_copy.fitness;
+
 }
 
 // Replace two chromosome by index
@@ -104,14 +105,14 @@ void replaceChromosomes(int *strongChromosome,int *weakChromosome,chromo_type *g
 
 void performNaturalSelection(set_type set, chromo_type *generation){
 
-    int strongChromosomes[simulationConfiguration.numberOfReplacedChromosomes]
-    int weakChromosomes[simulationConfiguration.numberOfReplacedChromosomes]
+    int strongChromosomes[simulationConfiguration.numberOfReplacedChromosomes];
+    int weakChromosomes[simulationConfiguration.numberOfReplacedChromosomes];
 
  /*
   * Sorting the generation along fitness
   */
 
-    for (int=0;i<simulationConfiguration.numberOfReplacedChromosomes;i++) {
+    for (int i=0;i<simulationConfiguration.numberOfReplacedChromosomes;i++) {
 
         weakChromosomes[i] = WORST_CHROMOSOME - i ;
         strongChromosomes[i] = i;
@@ -131,76 +132,55 @@ void performNaturalSelection(set_type set, chromo_type *generation){
 
 //Check for solution
 
-int convergence(
-        set_type set,
-        chromo_type *generation,
-        chromo_type *SolutionChromosome,
-        int *numberOfIterationsNoSolution,
-        int previousBestFitness
-        ) {
+int checkForConvergence(set_type set, chromo_type *generation, chromo_type *solutionChromosome,
+                         int *noChangeIterations, int lastBestFitness){
 
     //Check if the best chromosomes is equal to the first chromosome
 
-    if (generation[BEST_CHROMOSOME].fitness < previousBestFitness ) {
+    if (generation[BEST_CHROMOSOME].fitness < lastBestFitness ) {
 
-        *numberOfIterationsNoSolution = 0;
+        *noChangeIterations = 0;
     } else {
-            (*numberOfIterationsNoSolution)++;
+            (*noChangeIterations)++;
 }
     if (generation[BEST_CHROMOSOME].fitness == 0) {
-        copyChromosome(SolutionChromosome,generation[BEST_CHROMOSOME]);
+        copyChromosome(solutionChromosome,generation[BEST_CHROMOSOME]);
         return SOLUTION;
 
-    } else if (*numberOfIterationsNoSolution > simulationConfiguration.iterations) {
-        copyChromosome(SolutionChromosome, generation[BEST_CHROMOSOME]);
-        return NO_IMPROVEMENTS
+    } else if (*noChangeIterations > simulationConfiguration.iterations) {
+        copyChromosome(solutionChromosome, generation[BEST_CHROMOSOME]);
+        return NO_IMPROVEMENTS;
 
     }
 
     // If no solution
-    return CONVERGENCE
+    return CONVERGENCE;
 
 }
 
-void newGeneration(set_type,chromo_type *generation) {
+void newGeneration(set_type set,chromo_type *generation) {
     //Cross-over (Except the fittest chromosome hence RandInt(1,POPULATION_SIZE))
     for(int i = 0; i < simulationConfiguration.numberOfCrossOvers; i++){
 
         int mutatedChromsome1,mutatedChromsome2;
 
-        mutatedChromsome1 = RandInt(1,POPULATION_SIZE);
-        mutatedChromsome2 = RandInt(1,POPULATION_SIZE);
+        mutatedChromsome1 = randomInt(1,POPULATION_SIZE);
+        mutatedChromsome2 = randomInt(1,POPULATION_SIZE);
 
-        chromosomeCrossOver(set,&generation[mutatedChromsome1],generation[mutatedChromsome2]);
+        chromosomeCrossOver(set,&generation[mutatedChromsome1],&generation[mutatedChromsome2]);
 
     }
     //Mutation
-    for (int = 0;i<simulationConfiguration.numberOfMutations;i++){
+    for (int i = 0;i<simulationConfiguration.numberOfMutations;i++){
 
-        int mutatedChromosome = RandInt(1,POPULATION_SIZE);
+        int mutatedChromosome = randomInt(1,POPULATION_SIZE);
 
-        mutateChromosome(set,&generation[mutatedChromosome])
+        mutateChromosome(set,&generation[mutatedChromosome]);
     }
     //Sort By Fitness
 
     sortChromosomes(generation);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         void generateRandomChromosomes(set_type set, chromo_type *chromo) {
@@ -227,8 +207,8 @@ void chromosomeCrossOver(set_type set, chromo_type *chromo1, chromo_type *chromo
     // temp is temporary storage
 
     // Check for fitness
-    chromo1->fitness = fitnessMeasuring(set, *chromo1);
-    chromo2->fitness = fitnessMeasuring(set, *chromo2);
+    chromo1->fitness = towerHeightDifference(set, *chromo1);
+    chromo2->fitness = towerHeightDifference(set, *chromo2);
 }
 
 // Assignment 4
@@ -249,4 +229,66 @@ int heightOfTower(set_type set, bool selectedSet, chromo_type chromo) {
 
 int towerHeightDifference(set_type set, chromo_type chromo){
     return abs((heightOfTower(set, true, chromo) - heightOfTower(set, false, chromo)));
+}
+
+int randomInt(int lower, int upper) {
+    int r;
+    const unsigned int range = 1 + upper - lower;
+    const unsigned int buckets = RAND_MAX/range;
+    const unsigned int limit = buckets/range;
+    /* Create equal size buckets all in a row, then fire randomly towards
+    * the buckets until you land in one of them. All buckets are equally
+    * likely. If you land off the end of the line of buckets, try again. */
+
+    do
+    {
+        r = rand();
+    } while (r >= limit);
+    return lower + (r/buckets);
+}
+int simulateEvolution(int *set, int *solutionDiff) {
+
+    chromo_type solutionChromosome;
+    chromo_type generation[POPULATION_SIZE];
+
+    createNewGeneration(set, generation);
+    chromosomeCrossOver(set, generation, generation+1);
+
+
+    int totalIterations = 0;
+    int iterationsNoImprovement = 0;
+    int simulationStatus = CONVERGENCE;
+    int lastBestFitness = WORST_FITNESS;
+
+    while (simulationStatus == CONVERGENCE){
+        totalIterations++;
+        performNaturalSelection(set, generation);
+        simulationStatus = checkForConvergence(
+                set, generation, &solutionChromosome,
+                &iterationsNoImprovement, lastBestFitness
+        );
+
+        if(totalIterations > MAX_ITERATION){
+            simulationStatus = AFTER_MAX_ITER;
+        }
+        if(simulationStatus != CONVERGENCE){
+            printOutput(set, simulationStatus, solutionChromosome);
+            *solutionDiff = towerHeightDifference(set, solutionChromosome);
+            return totalIterations;
+        }else {
+            lastBestFitness = generation[BEST_CHROMOSOME].fitness;
+            createNewGeneration(set, generation);
+        }
+
+    }
+
+    return totalIterations;
+}
+
+void mutateChromosome(set_type set, chromo_type *chromo) {
+    int geneToMutate = randomInt(0, LENGTH_OF_CHROMOSOME);
+
+    chromo->genes[geneToMutate] = (chromo->genes[geneToMutate] + 1) % 2;
+    chromo->fitness = towerHeightDifference(set, *chromo);
+
 }

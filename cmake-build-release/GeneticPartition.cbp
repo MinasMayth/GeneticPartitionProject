@@ -74,36 +74,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_1.c">
-			<Option target="GeneticPartition"/>
-		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_1.h">
-			<Option target="GeneticPartition"/>
-		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_2.c">
-			<Option target="GeneticPartition"/>
-		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_2.h">
-			<Option target="GeneticPartition"/>
-		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_3.c">
-			<Option target="GeneticPartition"/>
-		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_3.h">
-			<Option target="GeneticPartition"/>
-		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_4.c">
-			<Option target="GeneticPartition"/>
-		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_4.h">
-			<Option target="GeneticPartition"/>
-		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_5.c">
-			<Option target="GeneticPartition"/>
-		</Unit>
-		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Assignments/Assignment_5.h">
-			<Option target="GeneticPartition"/>
-		</Unit>
 		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionCore.c">
 			<Option target="GeneticPartition"/>
 		</Unit>
@@ -114,6 +84,12 @@
 			<Option target="GeneticPartition"/>
 		</Unit>
 		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionVisualization.h">
+			<Option target="GeneticPartition"/>
+		</Unit>
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Testing.c">
+			<Option target="GeneticPartition"/>
+		</Unit>
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/Testing.h">
 			<Option target="GeneticPartition"/>
 		</Unit>
 		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/main.c">

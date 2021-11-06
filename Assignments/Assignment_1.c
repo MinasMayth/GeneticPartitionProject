@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include "Assignment_1.h"
 
-void readInitialDataset(set_type set, bool automatic){
+void generateInitialTowerSet(set_type set, bool automatic){
     if(automatic){
         for(int i=0; i < popSize; i++){
             set[i] = rand() % AUTO_MAX;

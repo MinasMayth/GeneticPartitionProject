@@ -9,7 +9,7 @@
 // Assignment 3 a: Mutate a single gene in a chromosome.
 
 void mutateChromosome(set_type set, chromo_type *chromo) {
-    int mutatedGene = randomInt(0, chromoLength);
+    int mutatedGene = (0, chromoLength);
 
     chromo->genes[mutatedGene] = (chromo->genes[mutatedGene] + 1) % 2;
     chromo->fitness = fitnessMeasuring(set, *chromo);

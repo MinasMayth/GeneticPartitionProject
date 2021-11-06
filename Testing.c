@@ -5,6 +5,7 @@
 */
 
 #include "Testing.h"
+#include "GeneticPartitionCore.h"
 
 bool adequateT2 (int t2) {
     printf("t2 = %d\n", t2);
@@ -12,14 +13,23 @@ bool adequateT2 (int t2) {
     simulationConfiguration.iterations = t2;
     int results[T2_CONFIG];
     set_type set;
-    void readInitialDataset(set, True);
+    generateInitialTowerSet(set, true);
 
-    evolutionSimualtion(set, results + i);
+    for(int x=0; x< T2_CONFIG; x++){
+        if(x%(T2_CONFIG/50) == 0){
+            printf("|");
+            fflush(stdout);
+        }
+        simulateEvolution(set, results + x);
+    }
+    printf("|\n");
+
+
 
     int smallestNumber = 1;
     int smallestValue = results[0];
 
-    for (int i = 0, i < T2_CONFIG , i++){
+    for (int i = 0; i < T2_CONFIG ; i++){
         if (smallestValue == results[i]) {
             ++smallestNumber;
 
@@ -36,7 +46,7 @@ bool adequateT2 (int t2) {
     if (smallestNumber >= MINIMUM_PER_SIMULATION_T2 * T2_CONFIG) {
         return true;
     } else {
-        return flase;
+        return false;
 
     }
 }
@@ -54,9 +64,9 @@ void findT2 () {
     }
 
     int refineT2;
-    for (int = i, i < REFINE_T2,i++){
-        if (adequate((t2*i) / refineT2)){
-            refineT2 = ((t2*i) / refineT2 ));
+    for (int i = 0; i < REFINE_T2; i++){
+        if (adequateT2((t2*i) / refineT2)){
+            refineT2 = ((t2*i) / refineT2 );
         }
     }
     printf("t2 used of %d\n",refineT2);

@@ -31,7 +31,7 @@ typedef struct {
 
 //Functions used sorted by assignment question :
 //Functions used in the first question
-void readInitialDataset(set_type set, bool automatic);
+void generateInitialTowerSet(set_type set, bool automatic);
 
 //Functions used in the second question
 void generateRandomChromosomes(set_type set, chromo_type *chromo);
@@ -45,9 +45,6 @@ int fitnessMeasuring(set_type set, chromo_type chromo);
 
 //Cross Over function
 void chromosomeCrossOver(set_type, chromo_type *chromo1, chromo_type *chromo2);
-
-//Random Function --> Still needs to be written !!! Example is in the assigment paper
-int randomInt(int lower,int upper);
 
 //Functions used in the fourth question
 //Function to calculate the size of the towers

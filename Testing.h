@@ -14,7 +14,7 @@
 
 
 #include "GeneticPartitionConfigurationSimulation.h"
-#include "GeneticPartitionCore.ho.h"
+#include "GeneticPartitionCore.h"
 
 //Constants
 
@@ -29,7 +29,7 @@
 //Functions
 
 void findT2();
-bool adequateT2 (int t2)
+bool adequateT2 (int t2);
 
 
 #endif //GENETICPARTITION_TESTING_H

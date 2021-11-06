@@ -12,7 +12,6 @@ void printConfiguration(simulationConfigurationType simulationConfiguration ){
     printf("The configuration of the simulation \n");
 
     printf("Number of Mutations : %d, Number of Cross-Overs : %d, Number of replaced Chromosomes : %d , Time : %d \n\n",
-
            simulationConfiguration.numberOfMutations,
            simulationConfiguration.numberOfCrossOvers,
            simulationConfiguration.numberOfReplacedChromosomes,

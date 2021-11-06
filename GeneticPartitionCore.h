@@ -42,7 +42,7 @@ int blocks[NUMBER_OF_BlOCKS];
 #define CONVERGENCE 0
 #define SOLUTION 1
 #define NO_IMPROVEMENTS -1
-#define PREVIOUS_MAX_ITER -2
+#define AFTER_MAX_ITER -2
 
 
 
@@ -57,27 +57,27 @@ typedef struct {
 } chromo_type;
 
 //Main Program Functions
-int createNewGeneration(set_type set, chromo_type *generation);
+void createNewGeneration(set_type set, chromo_type *generation);
 void performNaturalSelection(set_type set, chromo_type *generation);
-void checkForConvergence(set_type set, chromo_type *generation, chromo_type *solutionChromosome,
+int checkForConvergence(set_type set, chromo_type *generation, chromo_type *solutionChromosome,
                          int *noChangeIterations, int lastBestFitness);
-void simulateEvolution(set_type set, int *solutionDiff);
+int simulateEvolution(set_type set, int *solutionDiff);
 
 
-void readInitialDataset(set_type set, bool automatic);
+void generateInitialTowerSet(set_type set, bool automatic);
 
 //Functions related to calculating fitness of a chromosome
 int heightOfTower(set_type set, bool selectedSet, chromo_type chromo);
-towerHeightDifference(set_type set, chromo_type chromo);
+int towerHeightDifference(set_type set, chromo_type chromo);
 
 //Chromosome Functions
 //Functions used in the second question
 void generateRandomChromosomes(set_type set, chromo_type *chromo);
 //Functions used in the third question
 //Mutation function
-void mutateChromosome(set_type, chromo_type *chromo);
+void mutateChromosome(set_type set, chromo_type *chromo);
 //Cross Over function
-void chromosomeCrossOver(set_type, chromo_type *chromo1, chromo_type *chromo2);
+void chromosomeCrossOver(set_type set, chromo_type *chromo1, chromo_type *chromo2);
 //sorting, copying and replacing
 void sortChromosomes(chromo_type *generation);
 void copyChromosome(chromo_type *to_overwrite, chromo_type to_copy);
@@ -87,6 +87,9 @@ void replaceChromosomes(
         chromo_type *generation,
         int amountReplaced
 );
+
+//Permute two chromosomes in the generation
+void permute(int i, int j, chromo_type *generation);
 
 
 //Utility Functions
@@ -104,9 +107,4 @@ int randomInt(int lower,int upper);
 //3. Check for convergence (e.g. do we have a perfect solution).
 //4. If not, back to the first step, else print result.
 
-
-
-
-
-
-#endif //GENETICPARTITION_GENETICPARTITIONCORE_H
+#endif

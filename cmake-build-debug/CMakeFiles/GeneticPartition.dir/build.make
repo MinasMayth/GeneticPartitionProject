@@ -78,74 +78,9 @@ CMakeFiles/GeneticPartition.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GeneticPartition.dir/main.c.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samya\CLionProjects\GeneticPartition\main.c -o CMakeFiles\GeneticPartition.dir\main.c.s
 
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_1.c.obj: CMakeFiles/GeneticPartition.dir/flags.make
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_1.c.obj: ../Assignments/Assignment_1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/GeneticPartition.dir/Assignments/Assignment_1.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GeneticPartition.dir\Assignments\Assignment_1.c.obj -c C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_1.c
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GeneticPartition.dir/Assignments/Assignment_1.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_1.c > CMakeFiles\GeneticPartition.dir\Assignments\Assignment_1.c.i
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GeneticPartition.dir/Assignments/Assignment_1.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_1.c -o CMakeFiles\GeneticPartition.dir\Assignments\Assignment_1.c.s
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_2.c.obj: CMakeFiles/GeneticPartition.dir/flags.make
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_2.c.obj: ../Assignments/Assignment_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/GeneticPartition.dir/Assignments/Assignment_2.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GeneticPartition.dir\Assignments\Assignment_2.c.obj -c C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_2.c
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GeneticPartition.dir/Assignments/Assignment_2.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_2.c > CMakeFiles\GeneticPartition.dir\Assignments\Assignment_2.c.i
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GeneticPartition.dir/Assignments/Assignment_2.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_2.c -o CMakeFiles\GeneticPartition.dir\Assignments\Assignment_2.c.s
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_3.c.obj: CMakeFiles/GeneticPartition.dir/flags.make
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_3.c.obj: ../Assignments/Assignment_3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/GeneticPartition.dir/Assignments/Assignment_3.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GeneticPartition.dir\Assignments\Assignment_3.c.obj -c C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_3.c
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_3.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GeneticPartition.dir/Assignments/Assignment_3.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_3.c > CMakeFiles\GeneticPartition.dir\Assignments\Assignment_3.c.i
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_3.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GeneticPartition.dir/Assignments/Assignment_3.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_3.c -o CMakeFiles\GeneticPartition.dir\Assignments\Assignment_3.c.s
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.obj: CMakeFiles/GeneticPartition.dir/flags.make
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.obj: ../Assignments/Assignment_4.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GeneticPartition.dir\Assignments\Assignment_4.c.obj -c C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_4.c
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_4.c > CMakeFiles\GeneticPartition.dir\Assignments\Assignment_4.c.i
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_4.c -o CMakeFiles\GeneticPartition.dir\Assignments\Assignment_4.c.s
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.obj: CMakeFiles/GeneticPartition.dir/flags.make
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.obj: ../Assignments/Assignment_5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GeneticPartition.dir\Assignments\Assignment_5.c.obj -c C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_5.c
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_5.c > CMakeFiles\GeneticPartition.dir\Assignments\Assignment_5.c.i
-
-CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samya\CLionProjects\GeneticPartition\Assignments\Assignment_5.c -o CMakeFiles\GeneticPartition.dir\Assignments\Assignment_5.c.s
-
 CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj: CMakeFiles/GeneticPartition.dir/flags.make
 CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj: ../GeneticPartitionCore.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GeneticPartition.dir\GeneticPartitionCore.c.obj -c C:\Users\samya\CLionProjects\GeneticPartition\GeneticPartitionCore.c
 
 CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.i: cmake_force
@@ -158,7 +93,7 @@ CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.s: cmake_force
 
 CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj: CMakeFiles/GeneticPartition.dir/flags.make
 CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj: ../GeneticPartitionVisualization.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GeneticPartition.dir\GeneticPartitionVisualization.c.obj -c C:\Users\samya\CLionProjects\GeneticPartition\GeneticPartitionVisualization.c
 
 CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.i: cmake_force
@@ -169,33 +104,38 @@ CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samya\CLionProjects\GeneticPartition\GeneticPartitionVisualization.c -o CMakeFiles\GeneticPartition.dir\GeneticPartitionVisualization.c.s
 
+CMakeFiles/GeneticPartition.dir/Testing.c.obj: CMakeFiles/GeneticPartition.dir/flags.make
+CMakeFiles/GeneticPartition.dir/Testing.c.obj: ../Testing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/GeneticPartition.dir/Testing.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GeneticPartition.dir\Testing.c.obj -c C:\Users\samya\CLionProjects\GeneticPartition\Testing.c
+
+CMakeFiles/GeneticPartition.dir/Testing.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GeneticPartition.dir/Testing.c.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\samya\CLionProjects\GeneticPartition\Testing.c > CMakeFiles\GeneticPartition.dir\Testing.c.i
+
+CMakeFiles/GeneticPartition.dir/Testing.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GeneticPartition.dir/Testing.c.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\samya\CLionProjects\GeneticPartition\Testing.c -o CMakeFiles\GeneticPartition.dir\Testing.c.s
+
 # Object files for target GeneticPartition
 GeneticPartition_OBJECTS = \
 "CMakeFiles/GeneticPartition.dir/main.c.obj" \
-"CMakeFiles/GeneticPartition.dir/Assignments/Assignment_1.c.obj" \
-"CMakeFiles/GeneticPartition.dir/Assignments/Assignment_2.c.obj" \
-"CMakeFiles/GeneticPartition.dir/Assignments/Assignment_3.c.obj" \
-"CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.obj" \
-"CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.obj" \
 "CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj" \
-"CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj"
+"CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj" \
+"CMakeFiles/GeneticPartition.dir/Testing.c.obj"
 
 # External object files for target GeneticPartition
 GeneticPartition_EXTERNAL_OBJECTS =
 
 GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/main.c.obj
-GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/Assignments/Assignment_1.c.obj
-GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/Assignments/Assignment_2.c.obj
-GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/Assignments/Assignment_3.c.obj
-GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.obj
-GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.obj
 GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj
 GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj
+GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/Testing.c.obj
 GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/build.make
 GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/linklibs.rsp
 GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/objects1.rsp
 GeneticPartition.exe: CMakeFiles/GeneticPartition.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable GeneticPartition.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\samya\CLionProjects\GeneticPartition\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable GeneticPartition.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GeneticPartition.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

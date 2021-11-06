@@ -47,6 +47,6 @@ simulationConfigurationType simulationConfiguration;
 
 //Function
 
-void printConfiguration (simulationConfigurationType simulationConfigurationType simulationConfiguration);
+void printConfiguration(simulationConfigurationType simulationConfiguration);
 
 #endif //GENETICPARTITION_GENETICPARTITIONCONFIGURATIONSIMULATION_H
