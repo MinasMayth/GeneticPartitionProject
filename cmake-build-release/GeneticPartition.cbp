@@ -110,6 +110,12 @@
 		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionCore.h">
 			<Option target="GeneticPartition"/>
 		</Unit>
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionVisualization.c">
+			<Option target="GeneticPartition"/>
+		</Unit>
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionVisualization.h">
+			<Option target="GeneticPartition"/>
+		</Unit>
 		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/main.c">
 			<Option target="GeneticPartition"/>
 		</Unit>

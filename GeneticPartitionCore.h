@@ -44,9 +44,6 @@ int blocks[NUMBER_OF_BlOCKS];
 #define NO_IMPROVEMENTS -1
 #define PREVIOUS_MAX_ITER -2
 
-
-
-
 // Types
 
 typedef int set_type[NUMBER_OF_BlOCKS];
@@ -59,9 +56,9 @@ typedef struct {
 //Main Program Functions
 void createNewGeneration(set_type set, chromo_type *generation);
 void performNaturalSelection(set_type set, chromo_type *generation);
-void checkForConvergence(set_type set, chromo_type *generation, chromo_type *solutionChromosome,
-                         int *noChangeIterations, int lastBestFitness);
-void simulateEvolution(set_type set, int *solutionDiff);
+int checkForConvergence(set_type set, chromo_type *gen, chromo_type *solutionChromosome,
+                        int *noChangeIterations, int lastBestFitness);
+int simulateEvolution(set_type set, int *solutionDiff);
 
 
 void readInitialDataset(set_type set, bool automatic);
@@ -86,7 +83,7 @@ void replaceChromosomes(
         int *strongChromosomes,
         int *weakChromosomes,
         chromo_type *generation,
-        int amountReplaced
+        int numberOfReplacedChromosomes
 );
 //Utility Functions
 //Random Function --> Still needs to be written !!! Example is in the assigment paper

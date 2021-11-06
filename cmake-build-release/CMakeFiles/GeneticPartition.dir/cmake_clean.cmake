@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GeneticPartition.dir/Assignments/Assignment_4.c.obj"
   "CMakeFiles/GeneticPartition.dir/Assignments/Assignment_5.c.obj"
   "CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj"
+  "CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj"
   "CMakeFiles/GeneticPartition.dir/main.c.obj"
   "GeneticPartition.exe"
   "GeneticPartition.exe.manifest"

@@ -272,6 +272,30 @@ GeneticPartitionCore.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.s
 .PHONY : GeneticPartitionCore.c.s
 
+GeneticPartitionVisualization.obj: GeneticPartitionVisualization.c.obj
+.PHONY : GeneticPartitionVisualization.obj
+
+# target to build an object file
+GeneticPartitionVisualization.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj
+.PHONY : GeneticPartitionVisualization.c.obj
+
+GeneticPartitionVisualization.i: GeneticPartitionVisualization.c.i
+.PHONY : GeneticPartitionVisualization.i
+
+# target to preprocess a source file
+GeneticPartitionVisualization.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.i
+.PHONY : GeneticPartitionVisualization.c.i
+
+GeneticPartitionVisualization.s: GeneticPartitionVisualization.c.s
+.PHONY : GeneticPartitionVisualization.s
+
+# target to generate assembly for a file
+GeneticPartitionVisualization.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.s
+.PHONY : GeneticPartitionVisualization.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -323,6 +347,9 @@ help:
 	@echo ... GeneticPartitionCore.obj
 	@echo ... GeneticPartitionCore.i
 	@echo ... GeneticPartitionCore.s
+	@echo ... GeneticPartitionVisualization.obj
+	@echo ... GeneticPartitionVisualization.i
+	@echo ... GeneticPartitionVisualization.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
