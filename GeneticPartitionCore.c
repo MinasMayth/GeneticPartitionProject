@@ -77,7 +77,23 @@ void permute(int i, int j, chromo_type *generation){
     copyChromosome(generation+j,temporaryChromosome);
 }
 
+// Copy Chromosomes function
 
+void copyChromosome (chromo_type *destination, chromo_type * source){
+    for (int i = 0,i < LENGTH_OF_CHROMOSOME,i++) {
+        destination->genes[i] = source.genes[i];
+    }
+    destination -> fitness = source->fitness;
+}
+
+// Replace two chromosome by index
+
+void replaceChromosome(int *strongChromosome,int *weakChromosome,chromo_type *generation,int numberOfReplacedChromosomes){
+
+    for (int i = 0; i < numberOfReplacedChromosomes; i++){
+        copyChromosome(generation + weakChromosome[i],generation[strongChromosome[i]]);
+    }
+}
 
 
 
