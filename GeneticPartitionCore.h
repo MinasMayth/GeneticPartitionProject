@@ -19,21 +19,40 @@
 // Maximum value of an integer
 #define INT_MAX 2147483647
 
-#define numBlocks 20
+#define NUMBER_OF_BlOCKS 20
 // number of blocks in the input set
-#define chromoLength numBlocks
+#define LENGTH_OF_CHROMOSOME NUMBER_OF_BlOCKS
 //length of chromosome
-#define popSize 10
+#define POPULATION_SIZE 10
 //number of chromosomes in population
-int blocks[numBlocks];
+int blocks[NUMBER_OF_BlOCKS];
 // Maximum value when automatically generating
 #define AUTO_MAX (INT_MAX / 20)
+
+//Fitness constant
+#define WORST_FITNESS INT_MAX
+
+// Indexing best and worst chromosomes
+
+#define WORST_CHROMOSOME (POPULATION_SIZE-1)
+#define BEST_CHROMOSOME 0
+
+// Convergence status
+
+#define CONVERGENCE 0
+#define SOLUTION 1
+#define NO_IMPROVEMENTS -1
+#define PREVIOUS_MAX_ITER -2
+
+
+
+
 // Types
 
-typedef int set_type[numBlocks];
+typedef int set_type[NUMBER_OF_BlOCKS];
 typedef bool gene_type;
 typedef struct {
-    gene_type genes[chromoLength];
+    gene_type genes[LENGTH_OF_CHROMOSOME];
     int fitness;
 } chromo_type;
 
@@ -67,7 +86,7 @@ void replaceChromosomes(
         int *weakChromosomes,
         chromo_type *generation,
         int amountReplaced
-        );
+);
 
 
 //Utility Functions

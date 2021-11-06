@@ -1,8 +1,3 @@
-/* file        : main.c
- * authors     : Samy Hashim (s.t.a.hashim@student.rug.nl)
- *             : Alexander Vogt (a.n.vogt@student.rug.nl)
- * date        : Due 05/11/2021
-*/
 
 /* Description:
 * Given two sets of positive integers, we create a pair of disjoint sets.
@@ -17,6 +12,10 @@
 */
 
 #include "GeneticPartitionCore.h"
+
+
+
+
 
 
 int main(){
