@@ -40,7 +40,7 @@ typedef struct {
     int numberOfMutations;
     int numberOfReplacedChromosomes;
     int numberOfCrossOvers;
-    int time;
+    int iterations;
 } simulationConfigurationType;
 
 simulationConfigurationType simulationConfiguration;

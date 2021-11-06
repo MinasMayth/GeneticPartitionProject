@@ -16,6 +16,6 @@ void printConfiguration(simulationConfigurationType simulationConfiguration ){
            simulationConfiguration.numberOfMutations,
            simulationConfiguration.numberOfCrossOvers,
            simulationConfiguration.numberOfReplacedChromosomes,
-           simulationConfiguration.time
+           simulationConfiguration.iterations
            );
 }

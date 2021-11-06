@@ -44,6 +44,9 @@ int blocks[NUMBER_OF_BlOCKS];
 #define NO_IMPROVEMENTS -1
 #define PREVIOUS_MAX_ITER -2
 
+
+
+
 // Types
 
 typedef int set_type[NUMBER_OF_BlOCKS];
@@ -54,18 +57,18 @@ typedef struct {
 } chromo_type;
 
 //Main Program Functions
-void createNewGeneration(set_type set, chromo_type *generation);
+int createNewGeneration(set_type set, chromo_type *generation);
 void performNaturalSelection(set_type set, chromo_type *generation);
-int checkForConvergence(set_type set, chromo_type *gen, chromo_type *solutionChromosome,
-                        int *noChangeIterations, int lastBestFitness);
-int simulateEvolution(set_type set, int *solutionDiff);
+void checkForConvergence(set_type set, chromo_type *generation, chromo_type *solutionChromosome,
+                         int *noChangeIterations, int lastBestFitness);
+void simulateEvolution(set_type set, int *solutionDiff);
 
 
 void readInitialDataset(set_type set, bool automatic);
 
 //Functions related to calculating fitness of a chromosome
 int heightOfTower(set_type set, bool selectedSet, chromo_type chromo);
-int towerHeightDifference(set_type set, chromo_type chromo);
+towerHeightDifference(set_type set, chromo_type chromo);
 
 //Chromosome Functions
 //Functions used in the second question
@@ -77,17 +80,21 @@ void mutateChromosome(set_type, chromo_type *chromo);
 void chromosomeCrossOver(set_type, chromo_type *chromo1, chromo_type *chromo2);
 //sorting, copying and replacing
 void sortChromosomes(chromo_type *generation);
-void copyChromosome(chromo_type *toOverwrite, chromo_type toCopy);
-void permute(int i, int j, chromo_type *generation);
+void copyChromosome(chromo_type *to_overwrite, chromo_type to_copy);
 void replaceChromosomes(
         int *strongChromosomes,
         int *weakChromosomes,
         chromo_type *generation,
-        int numberOfReplacedChromosomes
+        int amountReplaced
 );
+
+
 //Utility Functions
 //Random Function --> Still needs to be written !!! Example is in the assigment paper
 int randomInt(int lower,int upper);
+
+
+
 
 // Functions
 
