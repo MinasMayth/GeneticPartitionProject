@@ -68,7 +68,7 @@ void generateInitialTowerSet(set_type set, bool automatic);
 
 //Functions related to calculating fitness of a chromosome
 int heightOfTower(const set_type set, bool selectedSet, chromo_type chromo);
-int towerHeightDifference(const set_type set, chromo_type chromo);
+int towerHeightDifference(const set_type set, chromo_type chromosome);
 
 //Chromosome Functions
 //Functions used in the second question

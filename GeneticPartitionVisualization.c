@@ -1,6 +1,8 @@
-//
-// Created by samya on 06/11/2021.
-//
+/* file        : GeneticPartitionVisualization.c
+ * authors     : Samy Hashim (s.t.a.hashim@student.rug.nl)
+ *             : Alexander Vogt (a.n.vogt@student.rug.nl)
+ * date        : Due 07/11/2021
+*/
 #include "Testing.h"
 #include "GeneticPartitionVisualization.h"
 

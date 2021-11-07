@@ -128,6 +128,30 @@ GeneticPartition/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/build
 .PHONY : GeneticPartition/fast
 
+GeneticPartitionConfigurationSettings.obj: GeneticPartitionConfigurationSettings.c.obj
+.PHONY : GeneticPartitionConfigurationSettings.obj
+
+# target to build an object file
+GeneticPartitionConfigurationSettings.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/GeneticPartitionConfigurationSettings.c.obj
+.PHONY : GeneticPartitionConfigurationSettings.c.obj
+
+GeneticPartitionConfigurationSettings.i: GeneticPartitionConfigurationSettings.c.i
+.PHONY : GeneticPartitionConfigurationSettings.i
+
+# target to preprocess a source file
+GeneticPartitionConfigurationSettings.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/GeneticPartitionConfigurationSettings.c.i
+.PHONY : GeneticPartitionConfigurationSettings.c.i
+
+GeneticPartitionConfigurationSettings.s: GeneticPartitionConfigurationSettings.c.s
+.PHONY : GeneticPartitionConfigurationSettings.s
+
+# target to generate assembly for a file
+GeneticPartitionConfigurationSettings.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\GeneticPartition.dir\build.make CMakeFiles/GeneticPartition.dir/GeneticPartitionConfigurationSettings.c.s
+.PHONY : GeneticPartitionConfigurationSettings.c.s
+
 GeneticPartitionCore.obj: GeneticPartitionCore.c.obj
 .PHONY : GeneticPartitionCore.obj
 
@@ -233,6 +257,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... GeneticPartition
+	@echo ... GeneticPartitionConfigurationSettings.obj
+	@echo ... GeneticPartitionConfigurationSettings.i
+	@echo ... GeneticPartitionConfigurationSettings.s
 	@echo ... GeneticPartitionCore.obj
 	@echo ... GeneticPartitionCore.i
 	@echo ... GeneticPartitionCore.s

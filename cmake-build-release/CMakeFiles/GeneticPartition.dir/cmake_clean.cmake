@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/GeneticPartition.dir/GeneticPartitionConfigurationSettings.c.obj"
   "CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj"
   "CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj"
   "CMakeFiles/GeneticPartition.dir/Testing.c.obj"

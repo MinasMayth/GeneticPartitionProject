@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionConfigurationSettings.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/GeneticPartitionConfigurationSettings.c.obj"
   "C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionCore.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj"
   "C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionVisualization.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj"
   "C:/Users/samya/CLionProjects/GeneticPartition/Testing.c" "C:/Users/samya/CLionProjects/GeneticPartition/cmake-build-debug/CMakeFiles/GeneticPartition.dir/Testing.c.obj"

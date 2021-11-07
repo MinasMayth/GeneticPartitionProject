@@ -1,4 +1,4 @@
-/* file        : GeneticPartitionConfigurationSimulation.h
+/* file        : GeneticPartitionConfigurationSettings.h
  * authors     : Samy Hashim (s.t.a.hashim@student.rug.nl)
  *             : Alexander Vogt (a.n.vogt@student.rug.nl)
  * date        : Due 05/11/2021
@@ -31,10 +31,10 @@
 // Termination
 
 #define POPULATION_SIZE 10
-#define MAX_TIME 500000
-#define MAX_ITERATION (10 * MAX_TIME)
+#define MAX_T2 500000
+#define MAX_T1 (10 * MAX_T2)
 
-// The use of a struct allows to test multiple different configurations
+// The use of a struct allows us to test multiple different configurations
 
 typedef struct {
     int numberOfMutations;

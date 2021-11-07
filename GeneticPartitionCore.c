@@ -12,12 +12,14 @@
  * Methods used for the partition problem
  */
 
+// ASSIGNMENT 1: Write a function that reads the heights of the blocks
 void generateInitialTowerSet(set_type set, bool automatic){
     if(automatic){
-        for(int i=0; i < 20; i++){
-            set[i] = randomInt(0, 50);
+        for(int i=0; i < NUMBER_OF_BlOCKS; i++){
+            set[i] = randomInt(0, AUTO_MAX);
         }
     }else{
+        printf("Please enter 20 positive integers:\n");
         int spaceLeft = INT_MAX;
         for(int i=0; i < NUMBER_OF_BlOCKS; i++) {
             scanf("%d", set + i);
@@ -165,7 +167,7 @@ void newGeneration(set_type set,chromo_type *generation) {
     sortChromosomes(generation);
 }
 
-
+//ASSIGNMENT 2: Write a function that fills a chromosome with random boolean values.
 void generateRandomChromosomes(set_type set, chromo_type *chromo) {
     for(int i=0; i < LENGTH_OF_CHROMOSOME; i++){
         chromo -> genes[i] = randomInt(0,2);
@@ -175,7 +177,6 @@ void generateRandomChromosomes(set_type set, chromo_type *chromo) {
 }
 
 // Assignment 3 b : Perform a cross-over mutation between two chromosomes
-
 void chromosomeCrossOver(set_type set, chromo_type *chromo1, chromo_type *chromo2) {
 
     // Use the given random method to determine the location where the chromosomes should be "cut"
@@ -198,7 +199,7 @@ void chromosomeCrossOver(set_type set, chromo_type *chromo1, chromo_type *chromo
 
 // Assignment 4
 
-//For this exercise.....(Give explanation)
+//For this exercise we sum all individual block height values to find the total
 
 int heightOfTower(const set_type set, bool selectedSet, chromo_type chromo) {
     int height = 0;
@@ -210,13 +211,24 @@ int heightOfTower(const set_type set, bool selectedSet, chromo_type chromo) {
     return height;
 }
 
+//ASSIGNMENT 5: To implement “natural selection” we will need a measure of fitness. A natural choice is the difference
+//in the height of the towers. Write a function to compute this difference, either using the function from
+//the previous assignment, or develop a more efficient way to do it
 
-int towerHeightDifference(const set_type set, chromo_type chromo){
+//ON ASSIGNMENT 6: While it is possible to write a function that uses the inverse relationship between difference
+//and fitness, so that fitness increases when we decrease difference, it isn't really necessary... There would be
+//issues arising from the conversion of float numbers, and so it's just a lot easier to remember that fitness is
+//better when it is closer to 0, and that stronger chromosomes will appear earlier in the generation
+int towerHeightDifference(const set_type set, chromo_type chromosome){
     int diff=0;
-    for(int i=0; i<LENGTH_OF_CHROMOSOME; i++){
-        diff+= (chromo.genes[i] ? -1 : 1) * (set[i]);
+    for(int x=0; x < LENGTH_OF_CHROMOSOME; x++){
+        if (chromosome.genes[x]) {
+            diff += -1 * (set[x]);
+        } else {
+            diff += 1 * (set[x]);
+        }
     }
-    return diff;
+    return abs(diff); //absolute difference between both sets
     }
 
 int randomInt(int lower, int upper) {
@@ -241,20 +253,19 @@ int simulateEvolution(int *set, int *solutionDiff) {
 
     initialiseGeneration(set, generation);
     chromosomeCrossOver(set, generation, generation+1);
-    printTowerSets(set, *generation);
-    printChromosome(*generation);
 
     int totalIterations = 0;
     int iterationsNoImprovement = 0;
     int simulationStatus = CONVERGENCE;
     int lastBestFitness = WORST_FITNESS;
+
     while (simulationStatus == CONVERGENCE){
         totalIterations++;
         performNaturalSelection(generation);
         simulationStatus = checkForConvergence(generation, &solutionChromosome,
                                                &iterationsNoImprovement, lastBestFitness
         );
-        if(totalIterations > MAX_ITERATION){
+        if(totalIterations > MAX_T1){
             printf("\nMax iterations reached");
             simulationStatus = AFTER_MAX_ITER;
         }
@@ -272,6 +283,7 @@ int simulateEvolution(int *set, int *solutionDiff) {
     return totalIterations;
 }
 
+//ASSIGNMENT 3A: Write a function that mutates a random gene in a chromosome.
 void mutateChromosome(set_type set, chromo_type *chromo) {
     int geneToMutate = randomInt(0, LENGTH_OF_CHROMOSOME);
 

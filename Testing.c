@@ -5,7 +5,6 @@
 */
 
 #include "Testing.h"
-#include "GeneticPartitionCore.h"
 
 bool adequateT2 (int t2) {
     printf("t2 = %d\n", t2);
@@ -41,7 +40,7 @@ bool adequateT2 (int t2) {
         }
     }
 
-    printf("Similarity : %d% \n" , (int)(smallestNumber * 100)/ T2_CONFIG);
+    printf("Similarity : %d\n" , (int)(smallestNumber * 100)/ T2_CONFIG);
 
     if (smallestNumber >= MINIMUM_PER_SIMULATION_T2 * T2_CONFIG) {
         return true;

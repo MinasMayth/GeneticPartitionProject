@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionConfigurationSettings.c">
+			<Option target="GeneticPartition"/>
+		</Unit>
+		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionConfigurationSettings.h">
+			<Option target="GeneticPartition"/>
+		</Unit>
 		<Unit filename="C:/Users/samya/CLionProjects/GeneticPartition/GeneticPartitionCore.c">
 			<Option target="GeneticPartition"/>
 		</Unit>
