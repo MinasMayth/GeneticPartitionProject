@@ -12,7 +12,7 @@
 */
 
 #include "GeneticPartitionCore.h"
-#include "GeneticPartitionConfigurationSimulation.h"
+#include "GeneticPartitionConfigurationSettings.h"
 #include "GeneticPartitionVisualization.h"
 #include "Testing.h"
 
@@ -21,26 +21,24 @@
 
 
 int main(){
-
-
     time_t time1;
     srand((unsigned int) time(&time1));
 
     set_type set;
     chromo_type generation[POPULATION_SIZE];
 
-    findT2();
+    //findT2();
 
-    simulationConfiguration.numberOfCrossOvers = NUMBER_OF_CROSSOVERS;
-    simulationConfiguration.numberOfReplacedChromosomes = NUMBER_OF_CHROMOSOMES_REPLACED;
-    simulationConfiguration.numberOfMutations = NUMBER_OF_MUTATIONS;
-    simulationConfiguration.iterations = MAX_ITERATION;
+    simulationSettings.numberOfCrossOvers = NUMBER_OF_CROSSOVERS;
+    simulationSettings.numberOfReplacedChromosomes = NUMBER_OF_CHROMOSOMES_REPLACED;
+    simulationSettings.numberOfMutations = NUMBER_OF_MUTATIONS;
+    simulationSettings.iterations = MAX_ITERATION;
 
-    generateInitialTowerSet(set, true);
+    generateInitialTowerSet(set, false);
     int solutionDiff;
     int numberOfIterations = simulateEvolution(set, &solutionDiff);
 
-    printf(numberOfIterations);
+    printf("\nNumber of iterations: %d", numberOfIterations);
 
     return 0;
 }

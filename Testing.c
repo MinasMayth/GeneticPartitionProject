@@ -10,7 +10,7 @@
 bool adequateT2 (int t2) {
     printf("t2 = %d\n", t2);
 
-    simulationConfiguration.iterations = t2;
+    simulationSettings.iterations = t2;
     int results[T2_CONFIG];
     set_type set;
     generateInitialTowerSet(set, true);
@@ -53,9 +53,9 @@ bool adequateT2 (int t2) {
 
 void findT2 () {
 
-    simulationConfiguration.numberOfMutations = NUMBER_OF_MUTATIONS;
-    simulationConfiguration.numberOfCrossOvers = NUMBER_OF_CROSSOVERS;
-    simulationConfiguration.numberOfReplacedChromosomes = NUMBER_OF_CHROMOSOMES_REPLACED;
+    simulationSettings.numberOfMutations = NUMBER_OF_MUTATIONS;
+    simulationSettings.numberOfCrossOvers = NUMBER_OF_CROSSOVERS;
+    simulationSettings.numberOfReplacedChromosomes = NUMBER_OF_CHROMOSOMES_REPLACED;
 
     int t2 = 1;
     while (!adequateT2(t2))

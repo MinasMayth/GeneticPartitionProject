@@ -9,8 +9,8 @@
  */
 
 
-#ifndef GENETICPARTITION_GENETICPARTITIONCONFIGURATIONSIMULATION_H
-#define GENETICPARTITION_GENETICPARTITIONCONFIGURATIONSIMULATION_H
+#ifndef GENETICPARTITION_GENETICPARTITIONCONFIGURATIONSETTINGS_H
+#define GENETICPARTITION_GENETICPARTITIONCONFIGURATIONSETTINGS_H
 
 // Libraries
 
@@ -25,8 +25,8 @@
 //Program Configuration
 
 #define NUMBER_OF_CROSSOVERS 5
-#define NUMBER_OF_MUTATIONS 15
-#define NUMBER_OF_CHROMOSOMES_REPLACED 3
+#define NUMBER_OF_MUTATIONS 20
+#define NUMBER_OF_CHROMOSOMES_REPLACED 2
 
 // Termination
 
@@ -43,10 +43,10 @@ typedef struct {
     int iterations;
 } simulationConfigurationType;
 
-simulationConfigurationType simulationConfiguration;
+simulationConfigurationType simulationSettings;
 
 //Function
 
 void printConfiguration(simulationConfigurationType simulationConfiguration);
 
-#endif //GENETICPARTITION_GENETICPARTITIONCONFIGURATIONSIMULATION_H
+#endif //GENETICPARTITION_GENETICPARTITIONCONFIGURATIONSETTINGS_H

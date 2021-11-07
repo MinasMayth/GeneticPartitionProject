@@ -13,7 +13,7 @@
 #include <limits.h>
 
 
-#include "GeneticPartitionConfigurationSimulation.h"
+#include "GeneticPartitionConfigurationSettings.h"
 #include "GeneticPartitionCore.h"
 
 //Constants

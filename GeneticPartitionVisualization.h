@@ -7,11 +7,11 @@
 
 
 #include "GeneticPartitionCore.h"
-#include "GeneticPartitionConfigurationSimulation.h"
+#include "GeneticPartitionConfigurationSettings.h"
 #include <stdbool.h>
 
 // Output constants
-#define DIVIDER_CHARACTER '='
+#define DIVIDER_CHARACTER '-'
 #define DIVIDER_LENGTH 80
 
 void printOriginalSet(set_type set);

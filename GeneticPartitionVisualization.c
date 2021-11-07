@@ -1,7 +1,7 @@
 //
 // Created by samya on 06/11/2021.
 //
-
+#include "Testing.h"
 #include "GeneticPartitionVisualization.h"
 
 void printOriginalSet(int *set) {
@@ -12,16 +12,19 @@ void printOriginalSet(int *set) {
 }
 
 void printTowerSets(int *set, chromo_type chromo) {
-    printf("False set: \n");
+    printf("\nFalse set: \n");
     printTowerSet(set, false, chromo);
 
-    printf("True set: \n");
+    printf("\nTrue set: \n");
     printTowerSet(set, true, chromo);
+
+    printf("Chromosome Fitness: ");
+    printf("%d\n", chromo.fitness);
 }
 
 void printTowerSet(int *set, bool chosenSet, chromo_type chromo) {
     int sum = 0;
-    printf('{');
+    printf("{");
     for(int x=0; x<LENGTH_OF_CHROMOSOME; x++){
         if(chosenSet == chromo.genes[x]){
             if(x != LENGTH_OF_CHROMOSOME-1){
@@ -33,16 +36,17 @@ void printTowerSet(int *set, bool chosenSet, chromo_type chromo) {
 
         }
     }
-    printf('}');
-    printf("\nsum = %d", sum);
+    printf("}");
+    printf("\nsum = %d\n", sum);
 
 }
 
 void printOutput(int *set, int convergeStatus, chromo_type chromo) {
+#if !TEST
     switch (convergeStatus) { //nice to be able to use switch like in java for alternating cases here
         case NO_IMPROVEMENTS:
-            printf("Most equal distribution of tower blocks found: \n",
-                   towerHeightDifference(set, chromo));
+            printf("\nMost equal distribution of tower blocks found: ");
+            printf("%d\n", towerHeightDifference(set, chromo));
             break;
         case SOLUTION:
             //printf("Solution found!\n");
@@ -58,9 +62,9 @@ void printOutput(int *set, int convergeStatus, chromo_type chromo) {
     printf("CHROMOSOME: ");
     printChromosome(chromo);
     printDivider(DIVIDER_LENGTH);
-
     printTowerSets(set, chromo);
     printDivider(DIVIDER_LENGTH);
+#endif
 }
 
 void printChromosome(chromo_type chromo) {
@@ -71,9 +75,11 @@ void printChromosome(chromo_type chromo) {
 }
 
 void printDivider(int length) {
+    printf("\n");
     for(int x=0; x < length; x++){
         printf("%c", DIVIDER_CHARACTER);
     }
     printf("\n");
+
 
 }

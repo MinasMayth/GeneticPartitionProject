@@ -57,18 +57,18 @@ typedef struct {
 } chromo_type;
 
 //Main Program Functions
-void createNewGeneration(set_type set, chromo_type *generation);
-void performNaturalSelection(set_type set, chromo_type *generation);
-int checkForConvergence(set_type set, chromo_type *generation, chromo_type *solutionChromosome,
-                         int *noChangeIterations, int lastBestFitness);
+void initialiseGeneration(set_type set, chromo_type *generation);
+void performNaturalSelection(chromo_type *generation);
+int checkForConvergence(chromo_type *generation, chromo_type *solutionChromosome, int *noChangeIterations,
+                        int lastBestFitness);
 int simulateEvolution(set_type set, int *solutionDiff);
 
 
 void generateInitialTowerSet(set_type set, bool automatic);
 
 //Functions related to calculating fitness of a chromosome
-int heightOfTower(set_type set, bool selectedSet, chromo_type chromo);
-int towerHeightDifference(set_type set, chromo_type chromo);
+int heightOfTower(const set_type set, bool selectedSet, chromo_type chromo);
+int towerHeightDifference(const set_type set, chromo_type chromo);
 
 //Chromosome Functions
 //Functions used in the second question
@@ -82,7 +82,7 @@ void chromosomeCrossOver(set_type set, chromo_type *chromo1, chromo_type *chromo
 void sortChromosomes(chromo_type *generation);
 void copyChromosome(chromo_type *to_overwrite, chromo_type to_copy);
 void replaceChromosomes(
-        int *strongChromosomes,
+        const int *strongChromosomes,
         int *weakChromosomes,
         chromo_type *generation,
         int amountReplaced

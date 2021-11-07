@@ -5,13 +5,13 @@ CMakeFiles/GeneticPartition.dir/GeneticPartitionCore.c.obj: \
  ../GeneticPartitionConfigurationSimulation.h \
  ../GeneticPartitionCore.c \
  ../GeneticPartitionCore.h \
- ../GeneticPartitionVisualization.h \
- ../Testing.h
+ ../GeneticPartitionVisualization.h
 CMakeFiles/GeneticPartition.dir/GeneticPartitionVisualization.c.obj: \
  ../GeneticPartitionConfigurationSimulation.h \
  ../GeneticPartitionCore.h \
  ../GeneticPartitionVisualization.c \
- ../GeneticPartitionVisualization.h
+ ../GeneticPartitionVisualization.h \
+ ../Testing.h
 CMakeFiles/GeneticPartition.dir/Testing.c.obj: \
  ../GeneticPartitionConfigurationSimulation.h \
  ../GeneticPartitionCore.h \

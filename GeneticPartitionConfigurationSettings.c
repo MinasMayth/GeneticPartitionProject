@@ -4,7 +4,7 @@
  * date        : Due 05/11/2021
 */
 
-#include "GeneticPartitionConfigurationSimulation.h"
+#include "GeneticPartitionConfigurationSettings.h"
 
 // This function prints out the configuration values used during the simulation
 
